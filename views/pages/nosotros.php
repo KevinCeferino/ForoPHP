@@ -4,7 +4,7 @@
     <?php
     include 'complements/head.php';
     ?>
-    <title>Document</title>
+    <title>Nosotros</title>
 </head>
 <body>
 

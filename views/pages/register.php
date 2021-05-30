@@ -4,13 +4,14 @@
     <?php
     include 'complements/head.php';
     ?>
-    <title>Inicio</title>
+    <title>Register</title>
 </head>
 <body>
 
 <?php
     include 'complements/navbar.php';
-    echo "SOY INCIO";
+    echo "SOY REGISTER";
 ?>
+    
 </body>
 </html>

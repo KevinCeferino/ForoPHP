@@ -3,9 +3,15 @@ include 'sql/sql.php';
 $db = new DB;
 $db->connect();
 if(isset($_GET['p']) && !empty($_GET['p'])){
+    $p = $_GET['p'];
     if($_GET['p'] == 'nosotros'){
         include 'views/pages/nosotros.php';
-    }else{
+    }else if($_GET['p'] == 'login'){
+        include 'views/pages/login.php';
+    }else if($_GET['p'] == 'register'){
+        include 'views/pages/register.php';
+    }
+    else{
         include 'views/errors/404.php';
     }
 

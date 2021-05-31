@@ -6,7 +6,7 @@ class DB
         $con = mysqli_connect('localhost','root','','nea');
         return $con;
     }
-    function query($table,$dates,$where){
+    function query($dates,$table,$where){
         $db = new DB;
         $con =$db->connect();
         if($where == null){

@@ -19,8 +19,8 @@
         </div>
         <div class="text-center">
             <form class="form-group" action="controller/login.php" method="post">
-                <input class="form-control my-2" type="email" name="email" id="email" placeholder="Correo Electronico">
-                <input class="form-control my-2" type="password" name="password" id="password" placeholder="Contraseña">
+                <input class="form-control my-2" type="email" name="email" id="email" placeholder="Correo Electronico" required>
+                <input class="form-control my-2" type="password" name="password" id="password" placeholder="Contraseña" required>
                 <button type="submit" class="btn btn-outline-dark" name="login">Iniciar sesión</button>
             </form>
         </div>

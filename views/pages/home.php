@@ -12,5 +12,8 @@
     include 'complements/navbar.php';
     echo "SOY INCIO";
 ?>
+
+
+<?php include 'complements/footer.php'  ?>
 </body>
 </html>

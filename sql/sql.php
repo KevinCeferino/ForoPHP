@@ -3,7 +3,7 @@
 class DB
 {
     function connect(){
-        $con = mysqli_connect('localhost','root','','nea');
+        $con = mysqli_connect('localhost','root','','forophp');
         return $con;
     }
     function select($dates,$table,$where){

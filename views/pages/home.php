@@ -1,5 +1,5 @@
 <?php
-$q = "SELECT * FROM post";
+$q = "SELECT * FROM post ORDER BY date DESC";
 $con = $db->allQuery($q);
 
 ?>
@@ -23,6 +23,10 @@ $con = $db->allQuery($q);
         <div class="text-center">
             <h1 class="my-3">Foro</h1>
         </div>
+        <div class="text-center">
+            <button id="crearPost" class="btn btn-outline-success">Crea un nuevo post</button>
+            <div id="formPost" class="w-50 mx-auto my-3"></div>
+        </div>
         <div class="w-50 mx-auto">
             <?php
 
@@ -34,6 +38,7 @@ $con = $db->allQuery($q);
                 $idPost = $data['id'];
                 $qComment = "SELECT * FROM comments WHERE commentIdPost='$idPost';";
                 $comments = $db->allQuery($qComment);
+                $qcountcomments = "SELECT COUNT(*) AS comments FROM comments WHERE commentIdPost='$idPost';"
             ?>
                 <div class="my-5 border p-3" id="<?php echo $data['id'] ?>">
                     <div class="d-flex justify-content-between">
@@ -50,7 +55,8 @@ $con = $db->allQuery($q);
                     <hr>
                     <div class="d-flex justify-content-around">
                         <p><i class="far fa-heart" style="color: red;;"></i> <?php echo $data['likes'] ?></p>
-                        <p><i class="far fa-comment-alt" style="color:cornflowerblue;"></i> <?php echo $data['comments'] ?></p>
+                        <p><i class="far fa-comment-alt" style="color:cornflowerblue;"></i> <?php $countComments = mysqli_fetch_array($db->allQuery($qcountcomments));
+                                                                                            echo $countComments['comments']; ?></p>
                     </div>
                     <?php if (!empty($_SESSION['id'])) { ?>
                         <hr>

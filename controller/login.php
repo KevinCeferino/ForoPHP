@@ -13,12 +13,12 @@ if (isset($_POST['login']) && isset($_POST['email']) && !empty($_POST['email']) 
             $_SESSION['name'] = $data['name'];
             $_SESSION['email'] = $data['email'];
             $_SESSION['rol'] = $data['rol'];
-            header("location: /php");
+            header("location: ../");
         }else{
-            echo "nologie uwu";
+            header("location: ../");
         }
     }else{
-        echo "no logie uwu2";
+        header("location: ../");
 
     }
 }

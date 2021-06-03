@@ -10,6 +10,8 @@ if(isset($_GET['p']) && !empty($_GET['p'])){
         include 'views/pages/login.php';
     }else if($_GET['p'] == 'register'){
         include 'views/pages/register.php';
+    }else if($_GET['p'] == 'logout'){
+        include 'controller/logout.php';
     }
     else{
         include 'views/errors/404.php';

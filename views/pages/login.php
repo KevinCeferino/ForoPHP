@@ -25,7 +25,7 @@
             </form>
         </div>
     </div>
-
+    <?php include 'complements/footer.php'  ?>
 </body>
 
 </html>

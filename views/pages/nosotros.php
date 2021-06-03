@@ -12,6 +12,9 @@
     include 'complements/navbar.php';
     echo "SOY NOSOTROS";
 ?>
+
+
+<?php include 'complements/footer.php'  ?>
     
 </body>
 </html>

@@ -20,6 +20,7 @@
     </header>
     <div>
         <div class="d-flex justify-content-center my-5"><b><h1 style="color: red;">ERROR 404</h1></b></div>
+        <div class="text-center"><a class="btn btn-outline-danger" href="/php">Volver a inicio</a></div>
     </div>
 </body>
 

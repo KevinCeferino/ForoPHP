@@ -1,7 +1,6 @@
 <?php
 include 'sql/sql.php';
 $db = new DB;
-$db->connect();
 if(isset($_GET['p']) && !empty($_GET['p'])){
     $p = $_GET['p'];
     if($_GET['p'] == 'nosotros'){
